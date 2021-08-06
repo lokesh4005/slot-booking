@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html>
+{% load static %}
+<head>
+<title> Login page </title>
+</head>
+<body style="background-color:#B6E3E9" ><form class="login" method="POST" action="home">
+    {% csrf_token %}
+<h1 align="center" style="background-color:lightgreen" > Welcome to Glory's indoor </h1>
+<table width="100%" border="0" bgcolor="lavender" >
+<tr>
+<th > About us </th>
+</tr>
+</table><br>
+<img src="{% static 'images/logo5.jpg' %}"  align="right" width="50%" height="250"><br>
+<br><p> <h3><b><i> A sports activity will involve the active engagement of the body. We appreciate you that, you are so enthusiastic for improving your sport. <br> Sports ,we are providing badmintion, swimming, cricket.</b></h3></p><br>
+<br>
+<a href="home"> <mark>Click here to book your slot!</mark></a>
+<br>
+<table width="100%" border="0" bgcolor="lavender" >
+<tr>
+<th > *** </th>
+</tr>
+</table>
+<br>
+<p align="left"><b> 2021 glory indoor copy rights.</b></p>
+___________________________________________________________________________________________________________________________________
+<font color="red">
+   <h3> <p align="center"><b>Contact us:</b><br>
+ E-mail: glory@gmail.com<br>
+       <br>
+Contact number:  (+91) 7032501544 <br>
+       <br>
+Address: <br> <br>Rd.no: 09 <br>
+       <br>
+Lakaram street,<br>
+       <br>khammam. (507001) </p></h3>
+    </font>
+_______________________________________________________________________________________________________________________________________
+
+<br>
+</form>
+</body>
+</html>

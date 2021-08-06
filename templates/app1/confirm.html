@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html>
+<head>
+<title> confirmation page </title>
+</head>
+<table border="1">
+<body  align="center" style="background:linear-gradient(#FFE1E9 50%,#FFB8B1 50%">
+<form class="confirm" action="thankyou" method="POST">
+    {% csrf_token %}
+<table border="1" width="50%" align="center" top="+50px">
+<tr><td><label for="slot timings">Select the slot timings:</label>
+<select id="slot timings" x=0,y=0>
+    <option value="select">Select the slot timings</option>
+<option value="5:00 a.m - 6:00 a.m">5:00 a.m - 6:00 a.m</option>
+<option value="6:00 a.m - 7:00 a.m">6:00 a.m - 7:00 a.m</option>
+<option value="7:00 p.m - 8:00 p.m">7:00 p.m - 8:00 p.m</option>
+<option value="8:00 p.m - 9:00 p.m">8:00 p.m - 9:00 p.m</option>
+</select>
+</td> </tr>
+</table>
+
+<br>
+<br>
+<br>
+<br>
+<button id="submit" onclick=submit()>submit</button>
+
+</form>
+</body>
+</table>
+</html>

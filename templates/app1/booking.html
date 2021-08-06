@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html>
+{% load static %}
+<head>
+<title> Booking page </title>
+    <p> <h1 align="center"> <mark><b> Choose your requirements:</mark></h1></p>
+</head>
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+}
+body{
+background-image:url('https://www.homerises.com/images/im/201802/HOIS45478/Round-Wall-Clock-10-Inch-Wood-Hanging-Rustic-Bedroom-Cheap-Office-HOIS45478-1.jpg');
+background-position:center;
+background-size:cover;
+font-family:cursive;
+margin-top:50px;
+}
+</style>
+<form class="booking" method="POST" action="confirm">
+    {% csrf_token %}
+<body align="left">
+<label for="sport">Select the sport:</label>
+<select id="sport">
+<option value="select">Select the sport</option>
+<option value="Cricket">Cricket</option>
+<option value="Badmintion">Badmintion</option>
+<option value="Swimming pool">Swimming pool</option>
+<option value="Table Tennis">Table tennis</option>
+</select><br>
+
+<br>
+Date:
+<input type="date" /><br>
+</h1>
+<br>
+
+<a href="confirm"> Click here to check the slots!</a>
+<br>
+
+
+
+
+</body>
+</html>
